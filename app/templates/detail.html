@@ -10,7 +10,7 @@
             {% for key, value in result.items() %}
                 <tr>
                     <th> {{ key }} </th>
-                    <td><input type="text" name={{ key }} value={{ value }} readonly /></td>
+                    <td><input readonly type="text" name={{ key }} value={{ value }} /></td>
                 </tr>
             {% endfor %}
         </table>

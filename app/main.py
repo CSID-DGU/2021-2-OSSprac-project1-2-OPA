@@ -21,11 +21,9 @@ def detail():
 
 
 @app.route('/result', methods=['POST'])
-def result():
     if request.method == 'POST':
         res = request.form.to_dict()
         return render_template("result.html", result=res)
-
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True, port=80)

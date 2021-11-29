@@ -15,7 +15,6 @@ def detail():
         res['StudentNumber'] = request.form.get('StudentNumber')
         res['Gender'] = request.form.get('Gender')
         res['Major'] = request.form.get('Major')
-        res['languages'] = ', '.join(request.form.getlist('languages'))
         return render_template("detail.html", result=res)
 
 @app.route('/result', methods=['POST'])

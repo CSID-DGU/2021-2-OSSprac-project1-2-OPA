@@ -13,7 +13,6 @@ def detail():
     res = request.form.to_dict()
     return render_template("detail.html", result=res)
 
-
 @app.route('/result', methods=['POST'])
 def result():
     res = request.form.to_dict()

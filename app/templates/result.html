@@ -4,8 +4,8 @@
       
       <title> OSSprac 2조 OPA Homework1 </title>
       <style>
-          tr {color:rgb(33, 132, 156)}
-          p {color:rgb(11, 12, 11)}
+          th {color:rgb(33, 132, 156)}
+          td {color:rgb(11, 12, 11)}
       </style><h1>   </h1>
 
    </head>
@@ -15,8 +15,8 @@
          {% for key, value in result.items() %}
          
             <tr>
-               <tr> {{ key }} </tr>
-               <tr> {{ value }} </tr>
+               <th {{ key }} </th>
+               <td> {{ value }} </td>
             </tr>
             
          {% endfor %}
